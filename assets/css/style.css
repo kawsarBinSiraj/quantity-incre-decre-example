@@ -1,0 +1,61 @@
+
+
+/**
+ * @Main css for (quantity-number-input)
+ * @project     - quantity-number-input
+ * @author      - quantity-number-input
+ * @created_by  - kawsar bin siraj
+ * @created_at  - 14-12-2020
+ * @modified_by -
+ */
+
+
+.quantity-number-input {
+    --input-width: 250px;
+    display: block;
+    position: relative;
+    max-width: var(--input-width);
+    margin: auto;
+}
+
+.quantity-number-input input::-webkit-outer-spin-button,
+.quantity-number-input input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity-number-input input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity-number-input input.quantity {
+    padding: 5px 30px;
+    width: var(--input-width);
+    text-align: center;
+    border: 1px solid var(--bs-blue);
+    outline: none;
+    border-radius: 6px;
+}
+
+.quantity-number-input .btn-input-step-toggle {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    outline: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quantity-number-input .btn-input-step-toggle.step-down {
+    left: 5px;
+}
+
+.quantity-number-input .btn-input-step-toggle.step-up {
+    right: 5px;
+}
